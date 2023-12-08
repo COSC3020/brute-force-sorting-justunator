@@ -20,3 +20,8 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+The best-case run time means the list is already sorted so it will take $\Theta(n)$ time as it will check every variable.
+The worst-case of a systematic permutation sort would be $\Theta(n(n!))$ as the main loop will run $n$ times to check each number while the permutation loop will run through $n!$ times in order to obtain every possible permutation
+
+A random permutation sort, something like bogo sort would have the same best case but the worst case would be technically infinite as there is a random chance where it will never actually find the sorted permutation as with randomness, we can get duplicate permutations already seen before.
